@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gianluca Astorino | Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="public_html/js/main.js"></script>
 </head>
+
 <body>
-    <header>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">About</a>
+            <div class="dropdown-content">
+                <a href="workhistory.html">Work History</a>
+                <a href="personal.html">Personal life</a>
+            </div>
+        </div>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="header-section">
+        <div class="header-content">
+            <h1>Hi, My name is Gianluca Astorino!</h1>
+            <p>Welcome to my website. Learn about me, my passions, my work and school experiences, and see some of my
+                past projects! </p>
+            <button onclick="location.href='#edu';">Let's go!</button>
+            <button onclick="askUserName()">What's your name?</button>
+            <p id="nameDisplay"></p>
+        </div>
+        <div class="header-image">
+            <img src="public_html/gianluca-barcelona.png" alt="Gianluca Astorino" id="profileImage"
+                onclick="toggleImageSize()">
+        </div>
+    </div>
+
+    <header id="edu">
         <h1>My Educational Journey</h1>
     </header>
 
@@ -22,10 +53,13 @@
     <section>
         <h2>Courses and Programs</h2>
         <p>
-            I am currently in the 4th year of the BTM (Business Technology Management) program here at Toronto Metropolitan University.
-            I have always been passionate about software development, specifically full-stack development, so I love taking courses around
-            coding and technology in general. I enjoyed taking CPS109 because of the way the course was structured. We had to do 100 hands 
-            on questions that really allowed us to put into practice what we were learning. 
+            I am currently in the 4th year of the BTM (Business Technology Management) program here at Toronto
+            Metropolitan University.
+            I have always been passionate about software development, specifically full-stack development, so I love
+            taking courses around
+            coding and technology in general. I enjoyed taking CPS109 because of the way the course was structured. We
+            had to do 100 hands
+            on questions that really allowed us to put into practice what we were learning.
         </p>
     </section>
 
@@ -42,13 +76,17 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="https://symplistic.ai" target="_blank">symplistic.ai</a></td>
-                    <td>Toronto, Naples FL</td>
+                    <td>
+                        <div><a href="https://symplistic.ai" target="_blank">symplistic.ai</a></div>
+                    </td>
+                    <td>Toronto | Naples</td>
                     <td>Founder, CEO</td>
                     <td>September 2024 - Present</td>
                 </tr>
                 <tr>
-                    <td>IBM</td>
+                    <td>
+                        <div><a href="https://www.ibm.com" target="_blank">IBM</a></div>
+                    </td>
                     <td>Markham</td>
                     <td>Tech Lead, full-stack developer, IBM Concert (Contract Position)</td>
                     <td>January 2024 - August 2024</td>
@@ -60,13 +98,17 @@
                     <td>March 2020 - December 2023</td>
                 </tr>
                 <tr>
-                    <td>IBM</td>
+                    <td>
+                        <div><a href="https://www.ibm.com" target="_blank">IBM</a></div>
+                    </td>
                     <td>Markham</td>
                     <td>Internal Operations Developer (Internship)</td>
                     <td>September 2019 - September 2022</td>
                 </tr>
                 <tr>
-                    <td>IBM</td>
+                    <td>
+                        <div><a href="https://www.ibm.com" target="_blank">IBM</a></div>
+                    </td>
                     <td>Markham</td>
                     <td>Internal Operations Developer (Summer Intern)</td>
                     <td>July 2019 - September 2019</td>
@@ -74,7 +116,6 @@
             </tbody>
         </table>
     </section>
-    
-    
 </body>
+
 </html>

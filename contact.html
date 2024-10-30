@@ -5,24 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gianluca Astorino | Contact</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="public_html/js/main.js"></script>
+    <script src="public_html/js/contact.js"></script>
 </head>
 <body>
 
+    <!-- navigation bar -->
     <div class="topnav">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">About</a>
-            <div class="dropdown-content">
-                <a href="workhistory.html">Work History</a>
-                <a href="personal.html">Personal Life</a>
-            </div>
+        <a href="index.html" class="logo header-3d-text-black">Gianluca Astorino</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#aboutme">About</a>
+            <a href="workhistory.html">Work History</a>
+            <a href="personal.html">Personal Life</a>
+            <a class="active" href="contact.html">Contact</a>
         </div>
-        <a href="#contact" class="active">Contact</a>
     </div>
+    <!-- end navigation bar -->
 
-    <header>
-        <h1>My Personal Life</h1>
-    </header>
+    <!-- header (hero) -->
+    <div class="other-header">
+        <h3 class="header-3d-text header-3d-text-large">Contact Me</h3>
+        <div class="arrow-container">
+            <a href="#about"><p class="down-arrow">&#8595;</p></a>
+        </div>
+    </div>
+    <!-- end header (hero) -->
+
+    <hr class="workhistory-hr">
+
+    <!-- contact form -->
+    <section class="contact">
+        <h2 class="header-3d-text header-3d-text-large">Fill out this form</h2>
+        <!-- form -->
+        <form id="contactForm" onsubmit="return validateForm()">
+            <!-- Name Field (Text Input) -->
+            <input class="contact-form-input" type="text" name="name" id="name" placeholder="Enter your name" required>
+            
+            <!-- Email Field (Text Input) -->
+            <input class="contact-form-input" type="email" name="email" id="email" placeholder="Enter your email" required>
+            
+            <!-- Phone Number Field (Text Input) -->
+            <input class="contact-form-input" type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+            
+            <!-- Subject Field (Text Input) -->
+            <input class="contact-form-input" type="text" name="subject" id="subject" placeholder="Subject" required>
+            
+            <!-- Message Field (Multi-line Text Area) -->
+            <textarea class="contact-form-input" name="message" id="message" rows="4" placeholder="Enter your message" required></textarea>
+            
+            <!-- Preferred Contact Method (Radio Buttons) -->
+            <div class="form-field">
+                <label>Preferred Contact Method:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="contact-method" value="Email" checked> Email</label>
+                    <label><input type="radio" name="contact-method" value="Phone"> Phone</label>
+                </div>
+            </div>
+            
+            <!-- Topics of Interest (Checkboxes) -->
+            <div class="form-field">
+                <label>Topics of Interest:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="topics" value="Web Development"> Web Development</label>
+                    <label><input type="checkbox" name="topics" value="AI"> AI</label>
+                    <label><input type="checkbox" name="topics" value="Cloud"> Cloud</label>
+                    <label><input type="checkbox" name="topics" value="Digital Marketing"> Digital Marketing</label>
+                </div>
+            </div>
+    
+            <!-- Interest Level Slider -->
+            <div class="form-field">
+                <label for="interest-level">Level of Interest in Technology (1-10):</label>
+                <input type="range" id="interest-level" name="interest-level" min="1" max="10" value="5" oninput="updateInterestValue(this.value)">
+                <span id="interest-value">5</span>
+            </div>
+            
+            <!-- Experience Level (Dropdown) -->
+            <div class="form-field">
+                <label for="experience">Technical Experience Level:</label>
+                <select id="experience" name="experience" class="contact-form-input" required>
+                    <option value="">Select Experience Level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+            
+            <!-- Submit and Clear Buttons -->
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset" onclick="clearFormData()">Clear</button>
+            </div>
+    
+            <!-- Error message -->
+            <p id="error-message" style="color: red; display: none;">Please fill out all required fields.</p>
+        </form>
+        <!-- end form -->
+    </section>
+    <!-- end contact form -->
     
 </body>
 </html>

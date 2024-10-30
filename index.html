@@ -7,113 +7,134 @@
     <title>Gianluca Astorino | Home</title>
     <link rel="stylesheet" href="styles.css">
     <script src="public_html/js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <div class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">About</a>
-            <div class="dropdown-content">
-                <a href="workhistory.html">Work History</a>
-                <a href="personal.html">Personal life</a>
-            </div>
-        </div>
-        <a href="#contact">Contact</a>
-    </div>
 
+    <!-- navigation bar -->
+    <div class="topnav">
+        <a href="#home" class="logo header-3d-text-black">Gianluca Astorino</a>
+        <div class="nav-links">
+            <a class="active" href="#home">Home</a>
+            <a href="#aboutme">About</a>
+            <a href="workhistory.html">Work History</a>
+            <a href="personal.html">Personal Life</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <!-- end navigation bar -->
+    
+    <!-- main header section (hero) -->
     <div class="header-section">
         <div class="header-content">
-            <h1>Hi, My name is Gianluca Astorino!</h1>
-            <p>Welcome to my website. Learn about me, my passions, my work and school experiences, and see some of my
-                past projects! </p>
-            <button onclick="location.href='#edu';">Let's go!</button>
-            <button onclick="askUserName()">What's your name?</button>
+            <h1 class="header-3d-text header-3d-text-large">Hi, I'm Gianluca Astorino!</h1>
+            <hr>
+            <button onclick="location.href='#aboutme';">Learn about me</button>
             <p id="nameDisplay"></p>
         </div>
         <div class="header-image">
-            <img src="public_html/gianluca-barcelona.png" alt="Gianluca Astorino" id="profileImage"
-                onclick="toggleImageSize()">
+            <img src="public_html/gianluca-barcelona.png" alt="Gianluca Astorino Barcelona" id="profileImage" onclick="toggleImageSize()">
         </div>
     </div>
+    <!-- end main header section (hero) -->
 
-    <header id="edu">
-        <h1>My Educational Journey</h1>
-    </header>
+    <!-- logo slider -->
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="https://res.cloudinary.com/piersolutions/image/authenticated/s--ig7CIYwU--/v1729974194/Screenshot_2024-10-26_at_4.22.27_PM-removebg-preview_uo5c6c.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/piersolutions/image/authenticated/s--MHYdo5xx--/v1730042834/Screenshot_2024-10-27_at_11.26.52_AM-removebg-preview_zehxbm.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://www.levelingtheplayingfield.org/wp-content/uploads/2019/11/Got-Junk-logo.png" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://media.licdn.com/dms/image/v2/C4E0BAQHCjGh1E-d1Mw/company-logo_200_200/company-logo_200_200/0/1630614560993?e=2147483647&v=beta&t=7W8mDTXC51PfVgmcfOhyGWGEGBnpnsf3k8SSJ8nmeS0" height="100" width="250" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://cdn.cookielaw.org/logos/b7f28d27-6bb9-46d7-a7f4-c89ba7faf08f/f3656954-61b3-4e33-bc64-e9c8a9fbbb73/b63c19a8-9e4b-4054-b859-680b863b8dae/enterprise_logo.png" height="100" width="250" style="height: 50px; width: 150px; margin-top: 25px; margin-left: 20px;" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/piersolutions/image/authenticated/s--VU9Zxd4f--/v1730039271/Screenshot_2024-10-27_at_10.27.27_AM-removebg-preview_gjuwrh.png" height="100" width="250" alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- end logo slider -->
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li>High School: Cardinal Carter Catholic High School (2017 - 2021)</li>
-            <li>University: Toronto Metropolitan University (2021 - 2025) </li>
-        </ul>
+    <!-- about me section -->
+    <section class="text-image-section" id="aboutme">
+        <div class="text-content">
+            <h3 class="header-3d-text header-3d-text-large">Who am I?</h3>
+            <hr>
+            <p>
+                I've always had a passion for two things - Technology, and Business, and from a young age, I've always been a developer of sorts. Whether it's developing software & writing code, or developing an idea into a business, I've always been in and around this space. 
+                <br>
+                I have been a software developer by trade for 5+ years now, starting with a High School Internship at IBM, progressing my way through other Internships and Contract positions. I have started multiple companies in the Tech industry, from Web & App consulting to AI SaaS solutions for Enterprise.
+            </p>
+            <a href="personal.html" class="cta-link">Learn More →</a>
+        </div>
+        <div class="image-content">
+            <img src="public_html/gianluca-lisbon.png" alt="Gianluca Lisbon" />
+        </div>
     </section>
+    <!-- end about me section -->
 
-    <section>
-        <h2>Courses and Programs</h2>
-        <p>
-            I am currently in the 4th year of the BTM (Business Technology Management) program here at Toronto
-            Metropolitan University.
-            I have always been passionate about software development, specifically full-stack development, so I love
-            taking courses around
-            coding and technology in general. I enjoyed taking CPS109 because of the way the course was structured. We
-            had to do 100 hands
-            on questions that really allowed us to put into practice what we were learning.
-        </p>
+    <!-- education overview section -->
+    <section class="education-section">
+        <h2 class="header-3d-text header-3d-text-large">My Education</h2>
+        <!-- education card group-->
+        <div class="education-cards">
+            <!-- education card (1) -->
+                <div class="education-card" style="background-image: url('https://www.torontomu.ca/content/dam/about/2-academic-excellence.jpg');">
+                    <div class="card-overlay">
+                        <h3 class="header-3d-text header-3d-text-small">Toronto Metropolitan University</h3>
+                    </div>
+                </div>
+            <!-- end education card (1) -->
+             <!-- education card (2) -->
+                <div class="education-card" style="background-image: url('https://fastly.4sqi.net/img/general/600x600/158335025_e0h6QKvyLto_Dqgt5055uRRXohK7XGyH0WHzNMTjEtc.jpg');">
+                    <div class="card-overlay">
+                        <h3 class="header-3d-text header-3d-text-small">Cardinal Carter Catholic High School</h3>
+                    </div>
+                </div>
+            <!-- end education card (2) -->
+        </div>
+        <!-- end education card group -->
     </section>
+    <!-- end education overview section -->
 
-    <section>
-        <h3>Work Experience</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Company Name</th>
-                    <th>Location</th>
-                    <th>Role</th>
-                    <th>Date Range</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div><a href="https://symplistic.ai" target="_blank">symplistic.ai</a></div>
-                    </td>
-                    <td>Toronto | Naples</td>
-                    <td>Founder, CEO</td>
-                    <td>September 2024 - Present</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div><a href="https://www.ibm.com" target="_blank">IBM</a></div>
-                    </td>
-                    <td>Markham</td>
-                    <td>Tech Lead, full-stack developer, IBM Concert (Contract Position)</td>
-                    <td>January 2024 - August 2024</td>
-                </tr>
-                <tr>
-                    <td>Indera Technologies</td>
-                    <td>Toronto</td>
-                    <td>Founder, Owner</td>
-                    <td>March 2020 - December 2023</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div><a href="https://www.ibm.com" target="_blank">IBM</a></div>
-                    </td>
-                    <td>Markham</td>
-                    <td>Internal Operations Developer (Internship)</td>
-                    <td>September 2019 - September 2022</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div><a href="https://www.ibm.com" target="_blank">IBM</a></div>
-                    </td>
-                    <td>Markham</td>
-                    <td>Internal Operations Developer (Summer Intern)</td>
-                    <td>July 2019 - September 2019</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <!-- quote section -->
+    <div class="info-text">
+        <h3 class="header-3d-text-black header-3d-text-small">On a journey to turn complex challenges into impactful solutions</h3>
+    </div>
+    <!-- end quote section -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <h1 class="header-3d-text header-3d-text-large">Gianluca Astorino</h1>
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:gianluca@symplistic.ai">gianluca@symplistic.ai</a></p>
+                <p>Location: Toronto, Ontario | Naples, Florida</p>
+            </div>
+    
+            <div class="footer-section social-links">
+                <h4>Connect</h4>
+                <a href="https://linkedin.com/in/gianlucaastorino" target="_blank">LinkedIn</a>
+                <a href="tel:6478028573" target="_blank">Call Me</a>
+            </div>
+    
+            <div class="footer-section copyright">
+                <p>&copy; 2024 Gianluca Astorino. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    
+    
 </body>
 
 </html>

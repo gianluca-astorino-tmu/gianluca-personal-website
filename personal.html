@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gianluca Astorino | Personifeal L</title>
+    <title>Gianluca Astorino | Personal Life</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,7 +29,6 @@
         </div>
     </div>
     <!-- end header (hero) -->
-    
 
     <hr class="workhistory-hr">
 
@@ -45,27 +44,43 @@
             </p>
             <a href="#mosaic" class="cta-link">See Mosaic →</a>
         </div>
-        <div class="image-content">
-            <img src="public_html/gianluca-la.png" />
+        <div class="media-content">
+            <figure>
+                <video controls width="100%" height="360">
+                    <source src="https://cdn.pixabay.com/video/2020/02/27/32975-394513987_tiny.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>
+                    Video by <a href="https://pixabay.com/users/wserrano-5393785/" target="_blank">wserrano</a>, February 27, 2020. Source: <a href="https://cdn.pixabay.com/video/2020/02/27/32975-394513987_tiny.mp4" target="_blank">here</a>.
+                </figcaption>
+            </figure>
         </div>
+        
     </section>
     <!-- end about me section -->
 
     <!-- travel mosaic section -->
     <section class="travel-mosaic" id="mosaic">
         <h2 class="header-3d-text header-3d-text-large">A Few Places I've Been</h2>
+        <a href="#" id="toggle-alt-text">Display Alt-Text For <span style="text-decoration: underline; font-weight: bold;">MY</span> Images</a>
         <!-- mosaic grid of photos -->
             <div class="mosaic-grid">
                 <div class="mosaic-item" style="background-image: url('https://www.ioptimizerealty.com/hubfs/nyc.jpeg');"></div>
                 <div class="mosaic-item large" style="background-image: url('https://media.istockphoto.com/id/1342531024/photo/tourists-enjoying-the-sites-in-downtown-montreal-in-the-summer.jpg?s=612x612&w=0&k=20&c=X5JuX9bNCwak0IuPnQZCigT8jx9ocis8iERN7IaY4oY=');"></div>
                 <div class="mosaic-item" style="background-image: url('https://media.timeout.com/images/105211673/image.jpg');"></div>
                 <div class="mosaic-item wide" style="background-image: url('https://www.wayfaringwithwagner.com/wp-content/uploads/2018/11/one-day-in-zurich.jpg');"></div>
-                <div class="mosaic-item" style="background-image: url('https://myfrenchcountryhomemagazine.com/wp-content/uploads/2024/02/city-of-love-hero.jpg');"></div>
-                <div class="mosaic-item" style="background-image: url('https://i0.wp.com/myvacationitineraries.com/media/2024/02/strasbourg-christmas-decorations-cathedral.jpg?resize=1100%2C1461&ssl=1');"></div>
+                <div class="mosaic-item" style="background-image: url('https://res.cloudinary.com/piersolutions/image/authenticated/s--IbKrNfhi--/v1731507118/paris_eiyle0.heic');" data-alt="This is a photo of the Eiffel Tower at night in Paris, France">
+                    <p class="caption">July 27th, 2023 - Paris, France</p>
+                </div>
+                <div class="mosaic-item" style="background-image: url('https://res.cloudinary.com/piersolutions/image/authenticated/s--xzSfzzB5--/v1731507221/IMG_3087_t0s383.heic');" data-alt="This is a photo of the Cathédrale Notre-Dame-de-Strasbourg in Strasbourg, France, on a rainy day">
+                    <p class="caption">July 25th, 2023 - Strasbourg, France</p>
+                </div>
                 <div class="mosaic-item wide" style="background-image: url('https://www.raveisfloridarentals.com/wp-content/uploads/2021/10/naples-shutterstock.jpg');"></div>
                 <div class="mosaic-item" style="background-image: url('https://siviaggia.it/wp-content/uploads/sites/2/2020/05/Isola-di-Capo-Rizzuto-2.jpg');"></div>
                 <div class="mosaic-item" style="background-image: url('https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2017-01/Getty_515070156_EDITORIALONLY_LosAngeles_HollywoodBlvd_Web72DPI_0.jpg?h=0a8b6f8b&itok=B_VKqykq');"></div>
-                <div class="mosaic-item large" style="background-image: url('https://images.squarespace-cdn.com/content/v1/5c7f5f60797f746a7d769cab/1708063049157-NMFAB7KBRBY2IG2BWP4E/the+golden+gate+bridge+san+francisco.jpg');"></div>
+                <div class="mosaic-item large" style="background-image: url('https://res.cloudinary.com/piersolutions/image/authenticated/s--DwBjmAEM--/v1731507536/IMG_1687_rxvnvd.jpg');" data-alt="This is a photo of the Golden Gate Bridge on a sunny day in San Francisco, California">
+                    <p class="caption">March 16th, 2022 - San Francisco, California</p>
+                </div>
                 <div class="mosaic-item" style="background-image: url('https://www.macslist.org/wp-content/uploads/2019/02/AdobeStock_15476180.jpg');"></div>
                 <div class="mosaic-item" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/59/Jade_Signature%2C_Jade_Beach%2C_Jade_Ocean%2C_Muse%2C_Ocean_4%2C_Chateau_Beach_March_2018_Sunny_Isles.jpg');"></div>
                 <div class="mosaic-item" style="background-image: url('https://www.civitatis.com/f/estados-unidos/miami/excursion-orlando-589x392.jpg');"></div>
@@ -103,5 +118,6 @@
     </footer>
     <!-- end footer -->
 
+    <script src="public_html/js/main.js"></script>
 </body>
 </html>

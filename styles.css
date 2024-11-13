@@ -329,12 +329,30 @@ td a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/**** New Styles for Video Embed ****/
+
+.media-content {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-content iframe {
+    width: 100%;
+    height: 360px; /* Increase this value to make the video taller */
+    max-width: 100%; /* Ensures it doesn't exceed the container width */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .text-image-section {
         flex-direction: column;
         text-align: center;
     }
-    .text-content, .image-content {
+    .text-content, .media-content {
         width: 100%;
         padding: 10px 0;
     }
@@ -590,6 +608,21 @@ hr {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.work-card .alt-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+    display: none; /* Initially hidden */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 /* Top-Aligned Text Overlay */
 .card-overlay {
     position: absolute;
@@ -721,6 +754,44 @@ hr {
     cursor: pointer;
     height: 200px;
     transition: transform 0.3s ease;
+}
+
+.caption {
+    /* margin-top: 8px; */
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+a#toggle-alt-text {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a#toggle-alt-text:hover {
+    background-color: #0056b3;
+}
+
+.mosaic-item .alt-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+    display: none; /* Initially hidden */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .mosaic-item.large {
@@ -897,3 +968,30 @@ hr {
     margin-left: 10px;
     font-weight: bold;
 }
+
+
+
+
+/* accessibility colours */
+.high-contrast {
+    background-color: #000; 
+    color: #FFD700;
+}
+
+/* Apply high-contrast styles to specific elements if needed */
+.high-contrast a {
+    color: #00FFFF;
+}
+
+.high-contrast button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+}
+
+/* Adjustments for readability within high-contrast mode */
+.high-contrast h1, .high-contrast h2, .high-contrast h3, .high-contrast p {
+    color: #FFD700;
+}
+
+

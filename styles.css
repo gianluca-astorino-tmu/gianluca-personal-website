@@ -96,7 +96,7 @@ td a:hover {
     left: 0;
     width: 100%;
     z-index: 100;
-    background-color: black;
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding: 0;
     height: 60px;
@@ -118,13 +118,14 @@ td a:hover {
 }
 
 .nav-links a {
-    color: #f9f9f9;
+    color: #000000;
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
     line-height: 20px;
+    background-color: white;
 }
 
 .nav-links a:hover {
